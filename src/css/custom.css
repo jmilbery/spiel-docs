@@ -1,0 +1,122 @@
+/**
+ * Spiel docs — corgi.software brand styles.
+ *
+ * Primary accent: Ice Blue #5B9BD5 (the dot in corgi.software)
+ * Dark surfaces: Charcoal Black #2A2B30 (Comet's coat)
+ * Light surfaces: Background Light #F8F7F5
+ * Body / text: Warm White #E3DCD4 on dark, Charcoal on light
+ * Type: Nunito (display), DM Sans (body), DM Mono (code)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Brand primary — Ice Blue */
+  --ifm-color-primary:         #5B9BD5;
+  --ifm-color-primary-dark:    #3F87CB;
+  --ifm-color-primary-darker:  #307FC7;
+  --ifm-color-primary-darkest: #2769A4;
+  --ifm-color-primary-light:   #77AFDF;
+  --ifm-color-primary-lighter: #85B7E2;
+  --ifm-color-primary-lightest: #ACCAEC;
+
+  /* Type */
+  --ifm-font-family-base:      'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family:   'Nunito', 'DM Sans', system-ui, sans-serif;
+  --ifm-font-family-monospace: 'DM Mono', 'Roboto Mono', 'Courier New', monospace;
+  --ifm-heading-font-weight:   800;
+  --ifm-h1-font-size:          2.6rem;
+  --ifm-h2-font-size:          2.0rem;
+  --ifm-h3-font-size:          1.5rem;
+  --ifm-code-font-size:        90%;
+
+  /* Surfaces — light mode */
+  --ifm-background-color:      #F8F7F5;
+  --ifm-background-surface-color: #FFFFFF;
+  --ifm-color-content:         #2A2B30;
+  --ifm-color-content-secondary: #6F7A82;
+
+  /* Code blocks */
+  --docusaurus-highlighted-code-line-bg: rgba(91, 155, 213, 0.12);
+}
+
+/* Dark mode — Comet's coat */
+[data-theme='dark'] {
+  --ifm-color-primary:         #5B9BD5;
+  --ifm-color-primary-dark:    #4A8DC9;
+  --ifm-color-primary-darker:  #3F87CB;
+  --ifm-color-primary-darkest: #2769A4;
+  --ifm-color-primary-light:   #89B8E3;
+  --ifm-color-primary-lighter: #9CC2E8;
+  --ifm-color-primary-lightest: #C4DAF1;
+
+  --ifm-background-color:        #2A2B30;
+  --ifm-background-surface-color: #1F2024;
+  --ifm-color-content:            #E3DCD4;
+  --ifm-color-content-secondary:  #9EA7AE;
+
+  --ifm-navbar-background-color:  #1F2024;
+  --ifm-footer-background-color:  #1A1B1F;
+  --ifm-footer-color:             #E3DCD4;
+  --ifm-footer-link-color:        #9EA7AE;
+  --ifm-footer-title-color:       #E3DCD4;
+
+  --docusaurus-highlighted-code-line-bg: rgba(91, 155, 213, 0.18);
+}
+
+/* Heading polish */
+h1, h2, h3, h4 {
+  letter-spacing: -0.01em;
+}
+h1 {
+  letter-spacing: -0.02em;
+}
+
+/* The corgi.software dot — render the literal text "corgi.software" with
+   an Ice Blue dot wherever it appears in prose. */
+.corgi-software-mark .dot {
+  color: var(--ifm-color-primary);
+}
+
+/* Inline code */
+code {
+  background: rgba(91, 155, 213, 0.10);
+  border: 1px solid rgba(91, 155, 213, 0.18);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 0.92em;
+}
+
+[data-theme='dark'] code {
+  background: rgba(91, 155, 213, 0.14);
+  border-color: rgba(91, 155, 213, 0.28);
+}
+
+/* Tables */
+table {
+  font-size: 0.92em;
+}
+table th {
+  background: rgba(91, 155, 213, 0.08);
+  font-weight: 600;
+}
+[data-theme='dark'] table th {
+  background: rgba(91, 155, 213, 0.16);
+}
+
+/* Hero callout */
+.hero-callout {
+  background: linear-gradient(135deg, rgba(91, 155, 213, 0.10), rgba(184, 133, 90, 0.08));
+  border-left: 3px solid var(--ifm-color-primary);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+/* Footer dark style — Comet vibes */
+.footer--dark {
+  --ifm-footer-background-color: #1A1B1F;
+  --ifm-footer-color: #E3DCD4;
+  --ifm-footer-link-color: #9EA7AE;
+  --ifm-footer-title-color: #E3DCD4;
+}
