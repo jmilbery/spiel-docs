@@ -98,7 +98,7 @@ const config = {
           {
             title: 'Guide',
             items: [
-              { label: 'Getting Started', to: '/getting-started' },
+              { label: 'Getting Started', to: '/' },
               { label: 'Authoring Guide', to: '/authoring-guide' },
               { label: 'Slide Types', to: '/slide-types' },
               { label: 'Directives', to: '/directives' },

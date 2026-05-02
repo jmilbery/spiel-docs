@@ -40,7 +40,8 @@
     ]
   },
   "overrides": {
-    "serialize-javascript": "^7.0.4"
+    "serialize-javascript": "^7.0.4",
+    "webpack": "5.99.9"
   },
   "engines": {
     "node": ">=20.0"
