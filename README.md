@@ -1,4 +1,15 @@
-# spiel-docs
+# spiel-docs — RETIRED
+
+> **This site has moved.** The Spiel docs now live in
+> [milbery-web-site](https://github.com/jmilbery/milbery-web-site) and publish at
+> **https://jmilbery.com/software/spiel** (product page) and
+> **https://jmilbery.com/software/spiel/manual** (the guide).
+>
+> Migrated 2026-08-23. Edit the markdown under
+> `src/content/manual/spiel/` in milbery-web-site — **not here**. The seven pages in
+> `docs/` are frozen at their migration state and kept only for history.
+>
+> This repo and its GitHub Pages deploy stay up until a redirect stub replaces them.
 
 Documentation site for [Spiel](https://github.com/jmilbery/spiel) — a markdown-driven slide engine for solo video creators.
 
